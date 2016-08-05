@@ -24,6 +24,7 @@ div#mainDiv
 	border-left: 1px solid black;
 	background-color:white;
 	opacity: 0.9;
+	font-family: segoe print;
 }
 
 div#head
@@ -90,14 +91,14 @@ td.navItem
 	border-spacing:0px;
 	color:white;
 	background-color:black;
-	font-family:Arial;
-	font-size:14px;
+	font-family:gaudy stout;
+	font-size:18px;
 }
 
 
 
 
-a
+a.item
 {
 	color:white;
 	text-decoration:none;
@@ -110,13 +111,13 @@ a
 	border-spacing:0px;
 }
 
-a:hover
+a.item:hover
 {
 	color:black;
 	background-color:rgb(109,63,225);
 }
 
-a:visited
+a.item:visited
 {
 	color:purple;
 	background-color:yellow;}
@@ -144,6 +145,27 @@ div#content
 	opacity: 1;
 }
 
+div#aboutt
+{
+	height: 500px;
+}
+
+iframe.vid
+{
+	width: 420px;
+	height: 170px;
+	opacity: 0.4;
+}
+
+iframe.vid:hover
+{
+	width:900px;
+	height:500px;
+	z-index: 0;
+	opacity:1;
+	position: relative; right: 170px;
+}
+
 div#footer
 {
 	background-color:black;
@@ -163,10 +185,10 @@ div#footer
 
 img.person
 {
-	width:50px;
-	height:50px;
-	float:left;
-	opacity:0.8;
+	width:100%;
+	height:100%;
+	
+	opacity:1;
 }
 
 .enlarge
@@ -202,6 +224,77 @@ div.wishBox1
 	min-height: 100px;
 }
 
+#wFace
+{
+	width:250px;
+	height:250px;
+	opacity:0.5;
+}
+#wFace:hover
+{
+	opacity: 1;
+}
+
+.imgFriend
+{
+	width:250px;
+	height:250px;
+	opacity:0.5;
+	position: relative; bottom: 254px; left: 275px;
+}
+.imgFriend:hover
+{
+	opacity: 1;
+}
+
+div#funBox1
+{
+	width: 420px;
+	height: 250px;
+	position: relative; bottom: 250px;
+}
+
+div#funBox2
+{
+	width: 420px;
+	height: 250px;
+	position: relative; bottom: 250px;
+}
+
+div#rsmBox1
+{
+	width:250px;
+	height:250px;
+}
+
+div#rsmBox2
+{
+	width:250px;
+	height:250px;
+	position: relative; bottom: 254px; left: 275px;
+}
+
+div#rsmBox3
+{
+	width:250px;
+	height:250px;
+	position: relative; bottom: 360px;
+}
+
+div#rsmBox4
+{
+	width:250px;
+	height:250px;
+	position: relative; bottom: 624px; left: 275px;
+}
+
+#frndhref
+{
+	
+	text-decoration: none;
+
+}
+
 }
 </style>
 
@@ -221,7 +314,7 @@ document.ready(function()
 
 <table style="width:100%; height:auto;">
 <tr>
-<td style="width:20%; height:100%; vertical-align:top; position:relative; top:400px; left:100px"><span id="test">ds</span></td>
+<td style="width:20%; height:100%; vertical-align:top; position:relative; top:400px;"><embed src="Files\BIRTHDAY SONG.mp3" width="180" height="90" loop="true" autostart="true" hidden="false" /></td>
 <td>
 <div id="mainDiv">
 	
@@ -246,13 +339,11 @@ document.ready(function()
 	
 		<table id="menu">
 			<tr>
-				<td id="about" class="navItem">   <a href="#" onclick="return false">About</a></td>
-				<td id="good" class="navItem">	  <a href="#" onclick="return false">Good</a></td>
-				<td id="bad" class="navItem">	  <a href="#" onclick="return false">Bad</a></td>
-				<td id="games" class="navItem">	  <a href="#" onclick="return false">Games</a></td>
-				<td id="surprise" class="navItem"><a href="#" onclick="return false">Surprise(Vid)</a></td>
-				<td id="mems" class="navItem">	  <a href="#" onclick="return false">Mems</a></td>
-				<td id="guestbook" class="navItem"><a href="#" onclick="return false">Guestbook</a></td>
+				<td id="about" class="navItem">   <a class="item" href="#" onclick="return false">About</a></td>
+				<td id="games" class="navItem">	  <a class="item" href="#" onclick="return false">Fun</a></td>
+				<td id="surprise" class="navItem"><a class="item" href="#" onclick="return false">Surprise</a></td>
+				<td id="mems" class="navItem">	  <a class="item" href="#" onclick="return false">Memories</a></td>
+				<td id="guestbook" class="navItem"><a class="item" href="#" onclick="return false">Guestbook</a></td>
 			</tr>
 		</table>
 	
@@ -268,45 +359,74 @@ document.ready(function()
 	<div id="aboutt">
 		<p><b style="font-size:30px; color: Blue;">Rishab Mantri</b></p>
 		<hr style="width:200px; position:relative; right: 180px; bottom:14px; background-color: black"/>
-		<div style="height:auto; width:50%; float:left"><p style="line-height:1.3;">(1)<br>Rishab Mantri,<br>Ne peekar country,<br>Aur maarke gulanti,<br>Ne bajaae hai ghanti,<br>Pukara hai uski aunty.</p></div>
-		<div style="height:auto; width:50%; float:right;"><p style="line-height:1.3;">(2)<br>Aunty hai aai,<br>Uske liye "ladoo" hai lai,<br>Manpasand kheer bhi banai,<br>Usko pakadai,<br>Aur kaaha chalo good-bai.</p></div>
-		<p style="line-height:1.3; position:relative bottom: 20px;"><br><br>(3)<br>Ab Rishab Mantri,<br>lekar kheer hai ghar laut aaya.</p>
-		<p style="line-height:1.3;">(4)<br>Ghar pe wo aaya,<br>Apne dosto ko bulaya,<br>Unko "Ladoo" khilaya,<br>Zabardasti NBA dikhaya,<br>Khub mazze karaya,<br>Aur is tarah hai apna B'Dday manaya!!
+		
+
+		<div id="rsmBox1">
+			<p style="line-height:1.3;"><span style="font-size: 18px; font-family: Ariel; color: yellow">(1)</span><br>Rishab Mantri,<br>Ne peekar country,<br>Aur maarke gulanti,<br>Bajakar padosi ki ghanti,<br>Bahar aane ko bola hai uski aunty (ko).</p>
+		</div>
+		<div id="rsmBox2">
+			<p style="line-height:1.3;"><span style="font-size: 18px; font-family: Ariel; color: yellow">(2)</span><br>Aunty hai aai,<br>Uske liye "ladoo" hai lai,<br>Manpasand kheer bhi banai,<br>Usko pakadai,<br>Aur kaaha chalo good-bai.</p>
+		</div>
+		<div id="rsmBox3">
+		<p style="line-height:1.3;"><span style="font-size: 18px; font-family: Ariel; color: yellow">(3)</span><br>Ab Rishab Mantri,<br>lekar kheer hai ghar laut aaya.</p>
+		</div>
+		<div id="rsmBox4">
+			<p style="line-height:1.3;"><span style="font-size: 18px; font-family: Ariel; color: yellow">(4)</span><br>Ghar pe wo aaya,<br>Apne dosto ko bulaya,<br>Unko "Ladoo" khilaya,<br>Zabardasti NBA dikhaya,<br>Khub mazze karaya,<br>Aur is tarah hai apna B'Dday manaya!!
+		</div>
 	</div>
+	
+
+		<!--<div style="height:auto; width:50%; float:left"><p style="line-height:1.3;"><span style="font-size: 18px; font-family: Ariel; color: yellow">(1)</span><br>Rishab Mantri,<br>Ne peekar country,<br>Aur maarke gulanti,<br>Ne bajaae hai ghanti,<br>Pukara hai uski aunty.</p></div>
+		<div style="height:auto; width:50%; float:right;"><p style="line-height:1.3;"><span style="font-size: 18px; font-family: Ariel; color: yellow">(2)</span><br>Aunty hai aai,<br>Uske liye "ladoo" hai lai,<br>Manpasand kheer bhi banai,<br>Usko pakadai,<br>Aur kaaha chalo good-bai.</p></div>
+		<p style="line-height:1.3; position:relative bottom: 20px;"><br><br><span style="font-size: 18px; font-family: Ariel; color: yellow">(3)</span><br>Ab Rishab Mantri,<br>lekar kheer hai ghar laut aaya.</p>
+		<p style="line-height:1.3;"><span style="font-size: 18px; font-family: Ariel; color: yellow">(4)</span><br>Ghar pe wo aaya,<br>Apne dosto ko bulaya,<br>Unko "Ladoo" khilaya,<br>Zabardasti NBA dikhaya,<br>Khub mazze karaya,<br>Aur is tarah hai apna B'Dday manaya!!-->
 	
 	<!---------GOOD-------------->
 
-	<div id="goodd" style="display:none"> Under construction good
+	<div id="gamess" style="display:none">
+		<a href="Files\wackyfaces.exe" style="text-decoration: none; display: table-row-group"><image title="Click on th image to download the .exe file" id="wFace" src="Files\Whacky_faces.png" alt="Whacky faces"></image></a>
+		<div class="imgFriend"><a href="Files\friend.exe" id="frndhref"><image height="250px" width="250px" title="Click on th image to download the .exe file" src="Files\Friend.jpg" alt="Friends forever"></image></a></div>
+		</br>
+		<div id="funBox1"><p><h2>Enna Rascala!!</h2></p>
+		<p> 			  <iframe class="vid" src="https://www.youtube.com/embed/6QzfDABqVs4?control=1">Error loading the video</iframe></p></div></br>
+		<div id="funBox2"><iframe class="vid" src="https://www.youtube.com/embed/fdGqV_IlsHc?control=1">Error loading the video</iframe></div>
+		
+		
+
 	</div>
 	
-	
-	<div id="badd" style="display:none"> Under construction bad
+	<div id="surprisee" style="display:none">
+		<iframe class="vid" src="https://www.youtube.com/embed/2mqhP4OMKHI?control=1">Error loading the video
+		</iframe>
 	</div>
 	
-	<div id="gamess" style="display:none"> Under construction games
+	<div id="memss" style="display:none">
+		<p>Hi Rishab</p>
+		<p>Well, let's recall our experiences with each other...</p>
+		<p>Ummm, I think the earliest memory with you is from 6th grade. Those were the days when we were forced to sit with girls and we would hate it and change our places to sit with someone of our same gender. We were made to sit together but, we actually had changed our places and sat with girls 'coz we didn't like each other :P.</p>
+		<p>Till 8th grade, I kinda disliked you. You were chill, mastikhor, not "studious" and were happy to break rules whereas I was always a serious person, a dadaji type :') . So I had decided in my mind to stay away from you :P</p>
+		<p>I think we first interacted properly at the Kanha Camp. That was the turning point. I remember we had come close to each other only there... Remember the night when you had accompanied me to the washroom 'coz "there was a leopard roaming loose" xD . And that we were so intelligent, that you waited outside alone in the open for me for 5 mins!! XD... The Ranmat ki chidiya. :'D... The Deep Game!...</p>
+		<p>The numerous night stays (Which were mostly at your, mine or Abhi9's place). The night when we had watched paranormal activity and tried to pull Arihant's leg while he was asleep. 3 people weren't able to take him down XD... The night at Abhi9's, when we(more of you people) enjoyed the Karaoke, and sleeping in the balcony... Our crazy dances (esp on the Baby Doll xD).</p>
+		<p>The trips... Kanha trip, Manali trip, Tadoba... The Manali trip... Paridhi had warned us, but still we 3 people ate from the same plate so that only one will have to wash the plate in that cold night. Inevitably, at the end we all three washed the plate :P... "Imbalance" xD</p>
+		<p>And many more... (probably now you create a database, and an textbox. Let's get these memories input and store it. I'll learn SQL etc soon and then we'll do more interesting stuff :P</p>
+
 	</div>
 	
-	<div id="surprisee" style="display:none"> Under construction surprise
-	</div>
-	
-	<div id="memss" style="display:none"> Under construction mems
-	</div>
-	
-	<div id="guestbookk" style="display:none"> Under construction guestbook
-			<div class="wishBox2"><img class="person" src="Files\IMG_2367.JPG" alt="Prateek"></img>shh</div>
-			<div class="wishBox1"></div>
-			<div class="wishBox2"></div>
-			<div class="wishBox1"></div>
-			<div class="wishBox2"></div>
-			<div class="wishBox1"></div>
+	<div id="guestbookk" style="display:none">
+			<div class="wishBox2"><img class="person" src="Files\7.png" alt="Bhagyashree" title="With love, from Bhagyashree ;-) :-*"></img></div>
+			<div class="wishBox1"><img class="person" src="Files\6.png" alt="Kritika" title="With love, from Kritika ;-) :-*"></img></div>
+			<div class="wishBox2"><img class="person" src="Files\8.png" alt="Kajal" title="With love, from Kajo ;-) :-*"></img></div>
+			<div class="wishBox1"><img class="person" src="Files\2.png" alt="Aanchal"></img></div>
+			<div class="wishBox2"><img class="person" src="Files\5.png" alt="Sarang" title="From Sarang :D"></img></div>
+			<div class="wishBox1"><img class="person" src="Files\4.png" alt="Akshay" title="From Akshay:D"></img></div>
+			<div class="wishBox2"><img class="person" src="Files\3.png" alt="Akshay" title="From Akshay:D"></img></div>
+			<div class="wishBox1"><img class="person" src="Files\rsm1.png" alt="More" title="And from many more fans!!"></img></div>
 		<!--
 		hi-->
 	</div>
 	</div>
 	
 	
-			
-		
 	<div id="blank"></div>
 	<!--########## end ###########-->
 	
@@ -315,9 +435,12 @@ document.ready(function()
 	<div id="footer">
 	Friends Forever, no matter what!! :-)
 	</div>
-	<!--########## end ###########-->
+	<!--########## end ###########-->		
+		
+	
 </td>
-<td style="width:20%; height:100%; vertical-align:top">ds</td>
+
+<td style="width:20%; height:100%; vertical-align:top"></td>
 </table>
 
 <script>
@@ -401,7 +524,7 @@ document.ready(function()
 </script>
 
 <!--<marquee style="z-index: -20"><img src="Files\IMG_2367.JPG" width="150" height="200">This is basic example of marquee</img></marquee>-->
-<embed src="Files\BIRTHDAY SONG.mp3" width="180" height="90" loop="true" autostart="true" hidden="true" />
+
 </body>
 </html>
 

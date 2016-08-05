@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Yo Shabrat!</title>
+<link rel="shortcut icon" href="Files\IMG_236.ico" type="image/x-icon" />
+<style>
+body
+{
+	width:100%;
+	height:auto;
+	background-color:rgb(200,200,200);
+	margin:0;
+	background-image: url("Files/Basketball.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+div#mainDiv
+{
+	margin: 0 auto;
+	width:802px;
+	border-right: 1px solid black;
+	border-left: 1px solid black;
+	background-color:white;
+	opacity: 0.9;
+}
+
+div#head
+{
+	height:auto;
+	width:100%;
+}
+
+div#clicke
+{
+	height:50px;
+	text-align:center;
+	color:yellow;
+	background-color:Black;
+	padding: 22px 0 0 0;
+	cursor: pointer;
+}
+
+div#message
+{
+	color:Black;
+	background-color:white;
+	height:auto;
+	font-size:60px;
+	font-weight:bold;
+	text-align:center;
+	padding: 5px 10px;
+	<!--display:hidden;-->
+}
+
+div#nav
+{
+	width:100%;
+	height:auto;
+	background-color:white;
+	padding:0;
+	margin:0;
+	border-spacing:0;
+}
+
+tr
+{
+	border-spacing:0px;
+}
+
+table#menu
+{
+	width:100%;
+	height:30px;
+	color:white;
+	background-color:black;
+	padding:0;
+	margin:0;
+	border-spacing:0px;
+}
+
+td.navItem
+{
+	height:30px;
+	width:114.2px;
+	<!--border: 1px solid yellow;<!--############Remove this-->
+	padding:5px 10px;
+	text-align:center;
+	border-spacing:0px;
+	color:white;
+	background-color:black;
+	font-family:Arial;
+	font-size:14px;
+}
+
+
+
+
+a
+{
+	color:white;
+	text-decoration:none;
+	display:block;
+	height:30px;
+	width:100%;
+	padding:7px 0 0 0;
+	margin:0;
+	text-align:inherit;
+	border-spacing:0px;
+}
+
+a:hover
+{
+	color:black;
+	background-color:rgb(109,63,225);
+}
+
+a:visited
+{
+	color:purple;
+	background-color:yellow;}
+
+
+
+div#blank
+{
+	height:50px;
+	width:100%;
+	background-color:white;
+}
+
+div#content
+{
+	width:70%;
+	margin:0 auto;
+	height:auto;
+	background-color:grey;
+	color:white;
+	border:1px solid black;
+	border-radius: 10px 10px 10px 10px;
+	padding:50px 40px;
+	min-height: 500px;
+	opacity: 1;
+}
+
+div#footer
+{
+	background-color:black;
+	color:white;
+	text-align:right;
+	padding-top:5px;
+	padding-right:4px;
+	position:static;
+	height:30px;
+	width:802px;
+}
+
+.selected
+{
+	background-color:pink;
+}
+
+img.person
+{
+	width:50px;
+	height:50px;
+	float:left;
+	opacity:0.8;
+}
+
+.enlarge
+{
+	width:600px;
+	height:600px;
+	opacity:0.3;
+	
+	
+}
+</style>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+
+<!--<script type="text/javascript">
+document.ready(function()
+{
+	$("test").fadeIn("slow");
+	});
+</script>-->
+</head>
+
+<body>
+
+
+<table style="width:100%; height:auto;">
+<tr>
+<td style="width:20%; height:100%; vertical-align:top; position:relative; top:400px; left:100px"><span id="test">ds</span></td>
+<td>
+<div id="mainDiv">
+	
+	<!--#################---HEADER---#############-->
+	<div id="head">
+		<div id="clicke"> click here </div>
+		<div id="message" style="display:none"> Happy B'Day<br />to you </div>
+	</div>
+
+	<!--<script>
+	document.ready(function()
+	{
+		click.toggle("faster")});
+		(function(){message.fadeIn("slow")});
+	</script>-->
+	<!--####### end ######-->
+	
+	
+	
+	
+	<!--###############  NAVIGTN  #############-->
+	
+		<table id="menu">
+			<tr>
+				<td id="about" class="navItem">   <a href="#" onclick="return false">About</a></td>
+				<td id="good" class="navItem">	  <a href="#" onclick="return false">Good</a></td>
+				<td id="bad" class="navItem">	  <a href="#" onclick="return false">Bad</a></td>
+				<td id="games" class="navItem">	  <a href="#" onclick="return false">Games</a></td>
+				<td id="surprise" class="navItem"><a href="#" onclick="return false">Surprise(Vid)</a></td>
+				<td id="mems" class="navItem">	  <a href="#" onclick="return false">Mems</a></td>
+				<td id="guestbook" class="navItem"><a href="#" onclick="return false">Guestbook</a></td>
+			</tr>
+		</table>
+	
+	<!--########### end ##########-->
+			
+	<!--############## BLANK #################-->		
+	<div id="blank"></div>
+	<!--########## end ###########-->
+			
+	<!--############## CONTENT   ################-->
+	<div id="content">
+	
+	<div id="aboutt">
+		<p><b style="font-size:30px; color: Blue;">Rishab Mantri</b></p>
+		<hr style="width:200px; position:relative; right: 180px; bottom:14px; background-color: black"/>
+		<div style="height:auto; width:50%; float:left"><p style="line-height:1.3;">(1)<br>Rishab Mantri,<br>Ne peekar country,<br>Aur maarke gulanti,<br>Ne bajaae hai ghanti,<br>Pukara hai uski aunty.</p></div>
+		<div style="height:auto; width:50%; float:right;"><p style="line-height:1.3;">(2)<br>Aunty hai aai,<br>Uske liye "ladoo" hai lai,<br>Manpasand kheer bhi banai,<br>Usko pakadai,<br>Aur kaaha chalo good-bai.</p></div>
+		<p style="line-height:1.3; position:relative bottom: 20px;"><br><br>(3)<br>Ab Rishab Mantri,<br>lekar kheer hai ghar laut aaya.</p>
+		<p style="line-height:1.3;">(4)<br>Ghar pe wo aaya,<br>Apne dosto ko bulaya,<br>Unko "Ladoo" khilaya,<br>Zabardasti NBA dikhaya,<br>Khub mazze karaya,<br>Aur is tarah hai apna B'Dday manaya!!
+	</div>
+	
+	<!---------GOOD-------------->
+
+	<div id="goodd" style="display:none"> Under construction good
+	</div>
+	
+	
+	<div id="badd" style="display:none"> Under construction bad
+	</div>
+	
+	<div id="gamess" style="display:none"> Under construction games
+	</div>
+	
+	<div id="surprisee" style="display:none"> Under construction surprise
+	</div>
+	
+	<div id="memss" style="display:none"> Under construction mems
+	</div>
+	
+	<div id="guestbookk" style="display:none"> Under construction guestbook
+		<p>
+		<img class="person" src="Files\IMG_2367.JPG" alt="Prateek"></img>
+		hi
+	</div>
+	</div>
+	
+	
+			
+		
+	<div id="blank"></div>
+	<!--########## end ###########-->
+	
+	
+	<!--################ FOOTER ###############-->
+	<div id="footer">
+	Friends Forever, no matter what!! :-)
+	</div>
+	<!--########## end ###########-->
+</td>
+<td style="width:20%; height:100%; vertical-align:top">ds</td>
+</table>
+
+<script>
+	$(document).ready(function()
+		{
+			$("#clicke").click(function()
+			{
+				$("#clicke").hide("slow", function(){$("#message").slideDown(1500);});
+			});
+		});
+</script>
+
+<script>
+	$(document).ready(function()
+		{
+			$("#aboutt").addClass("current");
+			
+			
+			
+			$("#about").click(function()
+			{
+				$("#about").addClass("selected");
+				$(".current").slideUp(function(){$("#aboutt").slideDown(1000);});
+				$("#aboutt").addClass("current");
+			});
+			
+			$("#good").click(function()
+			{
+				$("#good").addClass("selected");
+				$(".current").slideUp(function(){$("#goodd").slideDown(1000);});
+				$("#goodd").addClass("current");
+			});
+			
+			$("#bad").click(function()
+			{
+				$("#bad").addClass("selected");
+				$(".current").slideUp(function(){$("#badd").slideDown(1000);});
+				$("#badd").addClass("current");
+				$("#mainDiv").attr("background-color", "blue");
+				
+			});
+			
+			$("#games").click(function()
+			{
+				$("#games").addClass("selected");
+				$(".current").slideUp(function(){$("#gamess").slideDown(1000);});
+				$("#gamess").addClass("current");
+			});
+			
+			$("#surprise").click(function()
+			{
+				$("#surprise").addClass("selected");
+				$(".current").slideUp(function(){$("#surprisee").slideDown(1000);});
+				$("#surprisee").addClass("current");
+			});
+			
+			$("#mems").click(function()
+			{
+				$("#mems").addClass("selected");
+				$(".current").slideUp(function(){$("#memss").slideDown(1000);});
+				$("#memss").addClass("current");
+			});
+			
+			$("#guestbook").click(function()
+			{
+				$("#guestbook").addClass("selected");
+				$(".current").slideUp(function(){$("#guestbookk").slideDown(1000);});
+				$("#guestbookk").addClass("current");
+			});
+
+			$(".person").hover(function()
+			{
+				$(".person").addClass("enlarge");
+			});
+			
+    });
+	
+
+
+		
+</script>
+
+<!--<marquee style="z-index: -20"><img src="Files\IMG_2367.JPG" width="150" height="200">This is basic example of marquee</img></marquee>-->
+<embed src="Files\BIRTHDAY SONG.mp3" width="180" height="90" loop="true" autostart="true" hidden="true" />
+</body>
+</html>
+
+
+
+
+
+
+
+
+<!-- Use:
+Marquee tag
+microsoft code
+localstorage to get the number of peopple visited the website-->
